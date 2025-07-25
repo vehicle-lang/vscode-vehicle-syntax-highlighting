@@ -121,7 +121,7 @@ repository:
           |(Bool)
           |(Nat)
           |(Int)
-          |(Rat)
+          |(Real)
           |(Vector)
           |(Tensor)
           |(List)
