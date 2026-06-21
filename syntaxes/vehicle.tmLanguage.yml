@@ -36,8 +36,11 @@ repository:
           |(@dataset)
           |(@parameter)
           |(@property)
-          |(@postulate)
+          |(@builtin)
           |(@noinline)
+          |(@tensor)
+          |(@typeclass)
+          |(@instance)
         )
         \b
     captures:
@@ -47,6 +50,9 @@ repository:
       "4": { name: keyword.other.declaration.property.vehicle }
       "5": { name: keyword.other.declaration.postulate.vehicle }
       "6": { name: keyword.other.declaration.noinline.vehicle }
+      "7": { name: keyword.other.declaration.tensor.vehicle }
+      "8": { name: keyword.other.declaration.typeclass.vehicle }
+      "9": { name: keyword.other.declaration.instance.vehicle }
 
   control_keywords:
     match: >-
