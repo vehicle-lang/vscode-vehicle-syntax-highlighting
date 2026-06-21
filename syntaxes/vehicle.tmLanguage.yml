@@ -166,8 +166,8 @@ repository:
           |(::)
           |(!)
           |(=)
-          |(and)
-          |(or)
+          |(\band\b)
+          |(\bor\b)
         )
         (?![\p{S}\p{P}])
     captures:
