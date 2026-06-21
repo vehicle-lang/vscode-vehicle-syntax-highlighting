@@ -1,0 +1,76 @@
+>@typeclass
+#^^^^^^^^^^ source.vehicle keyword.other.declaration.typeclass.vehicle
+>record HasValidNetworkType (t : Type) where {}
+#^^^^^^ source.vehicle keyword.other.declaration.record.vehicle
+#      ^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle
+#                              ^ source.vehicle keyword.operator.colon.vehicle
+#                               ^ source.vehicle
+#                                ^^^^ source.vehicle support.type.type.vehicle
+#                                    ^^ source.vehicle
+#                                      ^^^^^ source.vehicle keyword.other.declaration.where.vehicle
+#                                           ^^^^ source.vehicle
+>
+>@typeclass
+#^^^^^^^^^^ source.vehicle keyword.other.declaration.typeclass.vehicle
+>record HasComparison t1 t2 where
+#^^^^^^ source.vehicle keyword.other.declaration.record.vehicle
+#      ^^^^^^^^^^^^^^^^^^^^^ source.vehicle
+#                           ^^^^^ source.vehicle keyword.other.declaration.where.vehicle
+>  { leTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  , ltTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  , geTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  , gtTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  , eqTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  , neTC : t1 -> t2 -> Bool
+#^^^^^^^^^ source.vehicle
+#         ^ source.vehicle keyword.operator.colon.vehicle
+#          ^^^^ source.vehicle
+#              ^^ source.vehicle keyword.operator.arrow.vehicle
+#                ^^^^ source.vehicle
+#                    ^^ source.vehicle keyword.operator.arrow.vehicle
+#                      ^ source.vehicle
+#                       ^^^^ source.vehicle support.type.bool.vehicle
+>  }
+#^^^^ source.vehicle
+>
+>

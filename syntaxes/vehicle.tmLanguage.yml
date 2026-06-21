@@ -19,13 +19,24 @@ repository:
   declaration_keywords:
     match: >-
       (?x)
-        ^
         (?:
-          (type)
+          ^
+          (?:
+            (type)
+            |(record)
+          )
+        )
+        |(?:
+          \b
+          (?:
+            (where)
+          )
         )
         \b
     captures:
       "1": { name: keyword.other.declaration.type.vehicle }
+      "2": { name: keyword.other.declaration.record.vehicle }
+      "3": { name: keyword.other.declaration.where.vehicle }
 
   annotation_keywords:
     match: >-
