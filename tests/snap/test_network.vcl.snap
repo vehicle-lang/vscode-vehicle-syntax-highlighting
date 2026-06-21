@@ -1,23 +1,23 @@
 >@network
 #^^^^^^^^ source.vehicle keyword.other.declaration.network.vehicle
->net : Tensor Rat [1] -> Tensor Rat [1]
+>net : Tensor Real [1] -> Tensor Real [1]
 #^^^^ source.vehicle
 #    ^ source.vehicle keyword.operator.colon.vehicle
 #     ^ source.vehicle
 #      ^^^^^^ source.vehicle support.type.tensor.vehicle
 #            ^ source.vehicle
-#             ^^^ source.vehicle support.type.rat.vehicle
-#                ^^ source.vehicle
-#                  ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                   ^^ source.vehicle
-#                     ^^ source.vehicle keyword.operator.arrow.vehicle
-#                       ^ source.vehicle
-#                        ^^^^^^ source.vehicle support.type.tensor.vehicle
-#                              ^ source.vehicle
-#                               ^^^ source.vehicle support.type.rat.vehicle
-#                                  ^^ source.vehicle
-#                                    ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                                     ^^ source.vehicle
+#             ^^^^ source.vehicle support.type.rat.vehicle
+#                 ^^ source.vehicle
+#                   ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                    ^^ source.vehicle
+#                      ^^ source.vehicle keyword.operator.arrow.vehicle
+#                        ^ source.vehicle
+#                         ^^^^^^ source.vehicle support.type.tensor.vehicle
+#                               ^ source.vehicle
+#                                ^^^^ source.vehicle support.type.rat.vehicle
+#                                    ^^ source.vehicle
+#                                      ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                       ^^ source.vehicle
 >
 >@property
 #^^^^^^^^^ source.vehicle keyword.other.declaration.property.vehicle

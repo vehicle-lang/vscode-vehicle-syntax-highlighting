@@ -2,7 +2,7 @@
 -- Inputs and outputs
 
 -- Define the type for our input images
---type Image = Tensor Rat [28, 28]
+--type Image = Tensor Real [28, 28]
 
 --------------------------------------------------------------------------------
 -- Network
@@ -10,7 +10,7 @@
 -- Declare the network used to classify images. The output of the network is a
 -- score for each of the digits 0 to 9.
 @network
-mnist : Tensor Rat [28, 28] -> Vector Rat 10
+mnist : Tensor Real [28, 28] -> Vector Real 10
 
 --------------------------------------------------------------------------------
 -- Definition of robustness around a point
@@ -20,23 +20,23 @@ mnist : Tensor Rat [28, 28] -> Vector Rat 10
 -- a parameter which allows the value of `epsilon` to be specified at compile
 -- time rather than be fixed in the specification.
 
---epsilon : Rat
+--epsilon : Real
 --epsilon = 0.01
 
---delta : Rat
+--delta : Real
 --delta = 0.02
 
 -- Next we define what it means for an image `x` to be in a ball of
 -- size epsilon around 0.
-boundedByEpsilon : Tensor Rat [28, 28] -> Bool
+boundedByEpsilon : Tensor Real [28, 28] -> Bool
 boundedByEpsilon x = forall i j . -0.01 <= x ! i ! j <= 0.01
 
 --The disjunction avoids having to define absolute value
-boundedByDelta : Tensor Rat [28, 28] -> Tensor Rat [28, 28] -> Bool
+boundedByDelta : Tensor Real [28, 28] -> Tensor Real [28, 28] -> Bool
 boundedByDelta x y = forall k . (-0.02 <= (((mnist x) ! k ) - ((mnist y) ! k )) <= 0.02)
 
 
-robustSingleInput : Tensor Rat [28, 28] -> Bool
+robustSingleInput : Tensor Real [28, 28] -> Bool
 robustSingleInput image = forall pertubation .
     let perturbedImage = image + pertubation in
     boundedByEpsilon pertubation => boundedByDelta image perturbedImage

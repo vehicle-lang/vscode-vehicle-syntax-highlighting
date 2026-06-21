@@ -1,8 +1,8 @@
 >@parameter
 #^^^^^^^^^^ source.vehicle keyword.other.declaration.parameter.vehicle
->r : Rat
+>r : Real
 #^^ source.vehicle
 #  ^ source.vehicle keyword.operator.colon.vehicle
 #   ^ source.vehicle
-#    ^^^ source.vehicle support.type.rat.vehicle
+#    ^^^^ source.vehicle support.type.rat.vehicle
 >

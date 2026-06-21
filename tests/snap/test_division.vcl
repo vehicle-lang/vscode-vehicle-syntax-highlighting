@@ -1,2 +1,2 @@
-division : Rat
+division : Real
 division = 6 / 2

@@ -3,7 +3,7 @@
 #                 ^ source.vehicle keyword.operator.colon.vehicle
 #                  ^ source.vehicle
 #                   ^^^^ source.vehicle support.type.bool.vehicle
->quantifierExists = exists (x : Rat) . x >= 0
+>quantifierExists = exists (x : Real) . x >= 0
 #^^^^^^^^^^^^^^^^^ source.vehicle
 #                 ^ source.vehicle keyword.operator.define.vehicle
 #                  ^ source.vehicle
@@ -11,11 +11,11 @@
 #                         ^^^^ source.vehicle
 #                             ^ source.vehicle keyword.operator.colon.vehicle
 #                              ^ source.vehicle
-#                               ^^^ source.vehicle support.type.rat.vehicle
-#                                  ^^ source.vehicle
-#                                    ^ source.vehicle keyword.operator.dot.vehicle
-#                                     ^^^ source.vehicle
-#                                        ^^ source.vehicle keyword.operator.gte.vehicle
-#                                          ^ source.vehicle
-#                                           ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                               ^^^^ source.vehicle support.type.rat.vehicle
+#                                   ^^ source.vehicle
+#                                     ^ source.vehicle keyword.operator.dot.vehicle
+#                                      ^^^ source.vehicle
+#                                         ^^ source.vehicle keyword.operator.gte.vehicle
+#                                           ^ source.vehicle
+#                                            ^ source.vehicle constant.numeric.integral.decimal.vehicle
 >

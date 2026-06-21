@@ -1,6 +1,6 @@
->-- Test passes dataset of type List Rat
+>-- Test passes dataset of type List Real
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
-#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
 >@dataset
 #^^^^^^^^ source.vehicle keyword.other.declaration.dataset.vehicle
 >trainingDataset : List Int

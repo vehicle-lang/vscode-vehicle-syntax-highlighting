@@ -1,13 +1,13 @@
->ten : Tensor Rat [3]
+>ten : Tensor Real [3]
 #^^^^ source.vehicle
 #    ^ source.vehicle keyword.operator.colon.vehicle
 #     ^ source.vehicle
 #      ^^^^^^ source.vehicle support.type.tensor.vehicle
 #            ^ source.vehicle
-#             ^^^ source.vehicle support.type.rat.vehicle
-#                ^^ source.vehicle
-#                  ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                   ^^ source.vehicle
+#             ^^^^ source.vehicle support.type.rat.vehicle
+#                 ^^ source.vehicle
+#                   ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                    ^^ source.vehicle
 >ten = [2, 3, 5]
 #^^^^ source.vehicle
 #    ^ source.vehicle keyword.operator.define.vehicle
@@ -19,11 +19,11 @@
 #             ^ source.vehicle constant.numeric.integral.decimal.vehicle
 #              ^^ source.vehicle
 >
->at : Rat
+>at : Real
 #^^^ source.vehicle
 #   ^ source.vehicle keyword.operator.colon.vehicle
 #    ^ source.vehicle
-#     ^^^ source.vehicle support.type.rat.vehicle
+#     ^^^^ source.vehicle support.type.rat.vehicle
 >at = ten ! 1
 #^^^ source.vehicle
 #   ^ source.vehicle keyword.operator.define.vehicle

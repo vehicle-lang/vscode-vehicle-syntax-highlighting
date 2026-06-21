@@ -1,6 +1,6 @@
 @network
-f : Vector Rat 1 -> Vector Rat 1
+f : Vector Real 1 -> Vector Real 1
 
 @property
 p : Bool
-p = forall (x : Rat) . (if x * x > 0 then True else False)
+p = forall (x : Real) . (if x * x > 0 then True else False)

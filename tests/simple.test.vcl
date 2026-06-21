@@ -2,11 +2,11 @@
 
 @network
 -- <-------- keyword.other.declaration.network.vehicle
-controller : InputVector -> Tensor Rat [1]
+controller : InputVector -> Tensor Real [1]
 --         ^ keyword.operator.colon.vehicle
 --                       ^^ keyword.operator.arrow.vehicle
 --                          ^^^^^^ support.type.tensor.vehicle
---                                 ^^^ support.type.rat.vehicle
+--                                 ^^^^ support.type.rat.vehicle
 
 @dataset
 -- <-------- keyword.other.declaration.dataset.vehicle
@@ -30,7 +30,7 @@ trainingLabels : Tensor Label [m]
 m : Nat
 --  ^^^ support.type.nat.vehicle
 
-type InputVector = Vector Rat 5
+type InputVector = Vector Real 5
 --               ^ keyword.operator.define.vehicle
 -- <---- keyword.other.declaration.type.vehicle
 --                 ^^^^^^ support.type.vector.vehicle

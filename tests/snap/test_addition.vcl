@@ -1,2 +1,2 @@
-addition : Rat
+addition : Real
 addition = 6 + 2

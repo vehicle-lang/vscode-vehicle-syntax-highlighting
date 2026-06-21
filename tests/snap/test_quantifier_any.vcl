@@ -1,2 +1,2 @@
 quantifierExists : Bool
-quantifierExists = exists (x : Rat) . x >= 0
+quantifierExists = exists (x : Real) . x >= 0

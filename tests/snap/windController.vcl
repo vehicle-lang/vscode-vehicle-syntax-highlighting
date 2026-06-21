@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- Inputs and outputs
 
-type InputVector = Tensor Rat [2]
+type InputVector = Tensor Real [2]
 
 currentSensor  = 0
 previousSensor = 1
@@ -10,7 +10,7 @@ previousSensor = 1
 -- Network
 
 @network
-controller : InputVector -> Tensor Rat [1]
+controller : InputVector -> Tensor Real [1]
 
 --------------------------------------------------------------------------------
 -- Safety property

@@ -5,7 +5,7 @@
 #                 ^ source.vehicle keyword.operator.colon.vehicle
 #                  ^ source.vehicle
 #                   ^^^^ source.vehicle support.type.bool.vehicle
->quantifierForall = forall (x : Rat) . x >= 0
+>quantifierForall = forall (x : Real) . x >= 0
 #^^^^^^^^^^^ source.vehicle
 #           ^^ source.vehicle keyword.operator.or.vehicle
 #             ^^^^ source.vehicle
@@ -15,11 +15,11 @@
 #                         ^^^^ source.vehicle
 #                             ^ source.vehicle keyword.operator.colon.vehicle
 #                              ^ source.vehicle
-#                               ^^^ source.vehicle support.type.rat.vehicle
-#                                  ^^ source.vehicle
-#                                    ^ source.vehicle keyword.operator.dot.vehicle
-#                                     ^^^ source.vehicle
-#                                        ^^ source.vehicle keyword.operator.gte.vehicle
-#                                          ^ source.vehicle
-#                                           ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                               ^^^^ source.vehicle support.type.rat.vehicle
+#                                   ^^ source.vehicle
+#                                     ^ source.vehicle keyword.operator.dot.vehicle
+#                                      ^^^ source.vehicle
+#                                         ^^ source.vehicle keyword.operator.gte.vehicle
+#                                           ^ source.vehicle
+#                                            ^ source.vehicle constant.numeric.integral.decimal.vehicle
 >
