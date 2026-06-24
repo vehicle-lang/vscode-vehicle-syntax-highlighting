@@ -73,4 +73,25 @@
 >  }
 #^^^^ source.vehicle
 >
+>@tensor
+#^^^^^^^ source.vehicle keyword.other.declaration.tensor.vehicle
+>record Pair where
+#^^^^^^ source.vehicle keyword.other.declaration.record.vehicle
+#      ^^^^^^ source.vehicle
+#            ^^^^^ source.vehicle keyword.other.declaration.where.vehicle
+>  { a : Real
+#^^^^^^ source.vehicle
+#      ^ source.vehicle keyword.operator.colon.vehicle
+#       ^ source.vehicle
+#        ^^^^ source.vehicle support.type.rat.vehicle
+>  , b : Real
+#^^^^^^ source.vehicle
+#      ^ source.vehicle keyword.operator.colon.vehicle
+#       ^ source.vehicle
+#        ^^^^ source.vehicle support.type.rat.vehicle
+>  } supports Addition
+#^^^^ source.vehicle
+#    ^^^^^^^^ source.vehicle keyword.other.declaration.supports.vehicle
+#            ^^^^^^^^^^ source.vehicle
+>
 >

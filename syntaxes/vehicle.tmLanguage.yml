@@ -30,6 +30,7 @@ repository:
           \b
           (?:
             (where)
+            |(supports)
           )
         )
         \b
@@ -37,6 +38,7 @@ repository:
       "1": { name: keyword.other.declaration.type.vehicle }
       "2": { name: keyword.other.declaration.record.vehicle }
       "3": { name: keyword.other.declaration.where.vehicle }
+      "4": { name: keyword.other.declaration.supports.vehicle }
 
   annotation_keywords:
     match: >-

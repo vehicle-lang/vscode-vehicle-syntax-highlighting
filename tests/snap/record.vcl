@@ -11,3 +11,9 @@ record HasComparison t1 t2 where
   , neTC : t1 -> t2 -> Bool
   }
 
+@tensor
+record Pair where
+  { a : Real
+  , b : Real
+  } supports Addition
+
