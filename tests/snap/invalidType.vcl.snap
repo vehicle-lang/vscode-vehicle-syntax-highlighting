@@ -1,10 +1,10 @@
 >@property
 #^^^^^^^^^ source.vehicle keyword.other.declaration.property.vehicle
->p : Rat
+>p : Real
 #^^ source.vehicle
 #  ^ source.vehicle keyword.operator.colon.vehicle
 #   ^ source.vehicle
-#    ^^^ source.vehicle support.type.rat.vehicle
+#    ^^^^ source.vehicle support.type.rat.vehicle
 >p = 0.1
 #^^ source.vehicle
 #  ^ source.vehicle keyword.operator.define.vehicle

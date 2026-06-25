@@ -1,19 +1,15 @@
->tensor : Tensor Rat [4]
-#^^^^ source.vehicle
-#    ^^ source.vehicle keyword.operator.or.vehicle
-#      ^ source.vehicle
+>tensor : Tensor Real [4]
+#^^^^^^^ source.vehicle
 #       ^ source.vehicle keyword.operator.colon.vehicle
 #        ^ source.vehicle
 #         ^^^^^^ source.vehicle support.type.tensor.vehicle
 #               ^ source.vehicle
-#                ^^^ source.vehicle support.type.rat.vehicle
-#                   ^^ source.vehicle
-#                     ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                      ^^ source.vehicle
+#                ^^^^ source.vehicle support.type.rat.vehicle
+#                    ^^ source.vehicle
+#                      ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                       ^^ source.vehicle
 >tensor = [5, 2, 16, 7]
-#^^^^ source.vehicle
-#    ^^ source.vehicle keyword.operator.or.vehicle
-#      ^ source.vehicle
+#^^^^^^^ source.vehicle
 #       ^ source.vehicle keyword.operator.define.vehicle
 #        ^^ source.vehicle
 #          ^ source.vehicle constant.numeric.integral.decimal.vehicle

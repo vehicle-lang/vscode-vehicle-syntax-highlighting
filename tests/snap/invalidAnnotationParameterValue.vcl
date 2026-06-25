@@ -1,2 +1,2 @@
 @parameter(implicit=xsd)
-epsilon : Rat
+epsilon : Real

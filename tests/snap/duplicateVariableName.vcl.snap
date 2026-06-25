@@ -1,22 +1,22 @@
 >@network
 #^^^^^^^^ source.vehicle keyword.other.declaration.network.vehicle
->f : Vector Rat 1 -> Vector Rat 1
+>f : Vector Real 1 -> Vector Real 1
 #^^ source.vehicle
 #  ^ source.vehicle keyword.operator.colon.vehicle
 #   ^ source.vehicle
 #    ^^^^^^ source.vehicle support.type.vector.vehicle
 #          ^ source.vehicle
-#           ^^^ source.vehicle support.type.rat.vehicle
-#              ^ source.vehicle
-#               ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                ^ source.vehicle
-#                 ^^ source.vehicle keyword.operator.arrow.vehicle
-#                   ^ source.vehicle
-#                    ^^^^^^ source.vehicle support.type.vector.vehicle
-#                          ^ source.vehicle
-#                           ^^^ source.vehicle support.type.rat.vehicle
-#                              ^ source.vehicle
-#                               ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#           ^^^^ source.vehicle support.type.rat.vehicle
+#               ^ source.vehicle
+#                ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                 ^ source.vehicle
+#                  ^^ source.vehicle keyword.operator.arrow.vehicle
+#                    ^ source.vehicle
+#                     ^^^^^^ source.vehicle support.type.vector.vehicle
+#                           ^ source.vehicle
+#                            ^^^^ source.vehicle support.type.rat.vehicle
+#                                ^ source.vehicle
+#                                 ^ source.vehicle constant.numeric.integral.decimal.vehicle
 >
 >@property
 #^^^^^^^^^ source.vehicle keyword.other.declaration.property.vehicle
@@ -25,7 +25,7 @@
 #         ^ source.vehicle keyword.operator.colon.vehicle
 #          ^ source.vehicle
 #           ^^^^ source.vehicle support.type.bool.vehicle
->property = forall (x : Rat) . x >= 0 and (forall x . f x >= 0)
+>property = forall (x : Real) . x >= 0 and (forall x . f x >= 0)
 #^^^^^^^^^ source.vehicle
 #         ^ source.vehicle keyword.operator.define.vehicle
 #          ^ source.vehicle
@@ -33,22 +33,22 @@
 #                 ^^^^ source.vehicle
 #                     ^ source.vehicle keyword.operator.colon.vehicle
 #                      ^ source.vehicle
-#                       ^^^ source.vehicle support.type.rat.vehicle
-#                          ^^ source.vehicle
-#                            ^ source.vehicle keyword.operator.dot.vehicle
-#                             ^^^ source.vehicle
-#                                ^^ source.vehicle keyword.operator.gte.vehicle
-#                                  ^ source.vehicle
-#                                   ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                                    ^ source.vehicle
-#                                     ^^^ source.vehicle keyword.operator.and.vehicle
-#                                        ^^ source.vehicle
-#                                          ^^^^^^ source.vehicle keyword.control.forall.vehicle
-#                                                ^^^ source.vehicle
-#                                                   ^ source.vehicle keyword.operator.dot.vehicle
-#                                                    ^^^^^ source.vehicle
-#                                                         ^^ source.vehicle keyword.operator.gte.vehicle
-#                                                           ^ source.vehicle
-#                                                            ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                                                             ^^ source.vehicle
+#                       ^^^^ source.vehicle support.type.rat.vehicle
+#                           ^^ source.vehicle
+#                             ^ source.vehicle keyword.operator.dot.vehicle
+#                              ^^^ source.vehicle
+#                                 ^^ source.vehicle keyword.operator.gte.vehicle
+#                                   ^ source.vehicle
+#                                    ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                     ^ source.vehicle
+#                                      ^^^ source.vehicle keyword.operator.and.vehicle
+#                                         ^^ source.vehicle
+#                                           ^^^^^^ source.vehicle keyword.control.forall.vehicle
+#                                                 ^^^ source.vehicle
+#                                                    ^ source.vehicle keyword.operator.dot.vehicle
+#                                                     ^^^^^ source.vehicle
+#                                                          ^^ source.vehicle keyword.operator.gte.vehicle
+#                                                            ^ source.vehicle
+#                                                             ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                                              ^^ source.vehicle
 >

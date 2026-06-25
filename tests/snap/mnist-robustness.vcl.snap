@@ -8,19 +8,19 @@
 >-- Define the type for our input images
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
->type Image = Tensor Rat [28, 28]
+>type Image = Tensor Real [28, 28]
 #^^^^ source.vehicle keyword.other.declaration.type.vehicle
 #    ^^^^^^^ source.vehicle
 #           ^ source.vehicle keyword.operator.define.vehicle
 #            ^ source.vehicle
 #             ^^^^^^ source.vehicle support.type.tensor.vehicle
 #                   ^ source.vehicle
-#                    ^^^ source.vehicle support.type.rat.vehicle
-#                       ^^ source.vehicle
-#                         ^^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                           ^^ source.vehicle
-#                             ^^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                               ^^ source.vehicle
+#                    ^^^^ source.vehicle support.type.rat.vehicle
+#                        ^^ source.vehicle
+#                          ^^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                            ^^ source.vehicle
+#                              ^^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                ^^ source.vehicle
 >
 >-- The type of the output labels
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
@@ -85,7 +85,7 @@
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
 >@network
 #^^^^^^^^ source.vehicle keyword.other.declaration.network.vehicle
->classifier : Image -> Vector Rat 10
+>classifier : Image -> Vector Real 10
 #^^^^^^^^^^^ source.vehicle
 #           ^ source.vehicle keyword.operator.colon.vehicle
 #            ^^^^^^^ source.vehicle
@@ -93,9 +93,9 @@
 #                     ^ source.vehicle
 #                      ^^^^^^ source.vehicle support.type.vector.vehicle
 #                            ^ source.vehicle
-#                             ^^^ source.vehicle support.type.rat.vehicle
-#                                ^ source.vehicle
-#                                 ^^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                             ^^^^ source.vehicle support.type.rat.vehicle
+#                                 ^ source.vehicle
+#                                  ^^ source.vehicle constant.numeric.integral.decimal.vehicle
 >
 >-- The classifier advises that input image `x` has label `i` if the score
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
@@ -152,11 +152,11 @@
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
 >@parameter
 #^^^^^^^^^^ source.vehicle keyword.other.declaration.parameter.vehicle
->epsilon : Rat
+>epsilon : Real
 #^^^^^^^^ source.vehicle
 #        ^ source.vehicle keyword.operator.colon.vehicle
 #         ^ source.vehicle
-#          ^^^ source.vehicle support.type.rat.vehicle
+#          ^^^^ source.vehicle support.type.rat.vehicle
 >
 >-- Next we define what it means for an image `x` to be in a ball of
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle

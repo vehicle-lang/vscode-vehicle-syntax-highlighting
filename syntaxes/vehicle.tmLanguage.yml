@@ -19,13 +19,26 @@ repository:
   declaration_keywords:
     match: >-
       (?x)
-        ^
         (?:
-          (type)
+          ^
+          (?:
+            (type)
+            |(record)
+          )
+        )
+        |(?:
+          \b
+          (?:
+            (where)
+            |(supports)
+          )
         )
         \b
     captures:
       "1": { name: keyword.other.declaration.type.vehicle }
+      "2": { name: keyword.other.declaration.record.vehicle }
+      "3": { name: keyword.other.declaration.where.vehicle }
+      "4": { name: keyword.other.declaration.supports.vehicle }
 
   annotation_keywords:
     match: >-
@@ -36,8 +49,11 @@ repository:
           |(@dataset)
           |(@parameter)
           |(@property)
-          |(@postulate)
+          |(@builtin)
           |(@noinline)
+          |(@tensor)
+          |(@typeclass)
+          |(@instance)
         )
         \b
     captures:
@@ -47,6 +63,9 @@ repository:
       "4": { name: keyword.other.declaration.property.vehicle }
       "5": { name: keyword.other.declaration.postulate.vehicle }
       "6": { name: keyword.other.declaration.noinline.vehicle }
+      "7": { name: keyword.other.declaration.tensor.vehicle }
+      "8": { name: keyword.other.declaration.typeclass.vehicle }
+      "9": { name: keyword.other.declaration.instance.vehicle }
 
   control_keywords:
     match: >-
@@ -166,8 +185,8 @@ repository:
           |(::)
           |(!)
           |(=)
-          |(and)
-          |(or)
+          |(\band\b)
+          |(\bor\b)
         )
         (?![\p{S}\p{P}])
     captures:

@@ -1,9 +1,9 @@
 @network
-f : Vector Rat 1 -> Vector Rat 1
+f : Vector Real 1 -> Vector Real 1
 
-square : Rat -> Rat
+square : Real -> Real
 square y = y * y
 
 @property
 p : Bool
-p = forall (x : Rat) . f [square x] ! 0 > 0
+p = forall (x : Real) . f [square x] ! 0 > 0

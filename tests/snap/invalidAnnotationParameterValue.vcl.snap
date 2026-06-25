@@ -3,9 +3,9 @@
 #          ^^^^^^^^^ source.vehicle
 #                   ^ source.vehicle keyword.operator.define.vehicle
 #                    ^^^^^ source.vehicle
->epsilon : Rat
+>epsilon : Real
 #^^^^^^^^ source.vehicle
 #        ^ source.vehicle keyword.operator.colon.vehicle
 #         ^ source.vehicle
-#          ^^^ source.vehicle support.type.rat.vehicle
+#          ^^^^ source.vehicle support.type.rat.vehicle
 >

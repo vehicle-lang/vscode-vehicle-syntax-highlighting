@@ -1,8 +1,8 @@
->subtraction : Rat
+>subtraction : Real
 #^^^^^^^^^^^^ source.vehicle
 #            ^ source.vehicle keyword.operator.colon.vehicle
 #             ^ source.vehicle
-#              ^^^ source.vehicle support.type.rat.vehicle
+#              ^^^^ source.vehicle support.type.rat.vehicle
 >subtraction = 6 - 2
 #^^^^^^^^^^^^ source.vehicle
 #            ^ source.vehicle keyword.operator.define.vehicle

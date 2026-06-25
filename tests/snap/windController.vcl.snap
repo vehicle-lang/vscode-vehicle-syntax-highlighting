@@ -5,31 +5,25 @@
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
 #  ^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
 >
->type InputVector = Tensor Rat [2]
+>type InputVector = Tensor Real [2]
 #^^^^ source.vehicle keyword.other.declaration.type.vehicle
-#    ^^^^^^^^^^ source.vehicle
-#              ^^ source.vehicle keyword.operator.or.vehicle
-#                ^ source.vehicle
+#    ^^^^^^^^^^^^^ source.vehicle
 #                 ^ source.vehicle keyword.operator.define.vehicle
 #                  ^ source.vehicle
 #                   ^^^^^^ source.vehicle support.type.tensor.vehicle
 #                         ^ source.vehicle
-#                          ^^^ source.vehicle support.type.rat.vehicle
-#                             ^^ source.vehicle
-#                               ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                                ^^ source.vehicle
+#                          ^^^^ source.vehicle support.type.rat.vehicle
+#                              ^^ source.vehicle
+#                                ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                 ^^ source.vehicle
 >
 >currentSensor  = 0
-#^^^^^^^^^^^ source.vehicle
-#           ^^ source.vehicle keyword.operator.or.vehicle
-#             ^^ source.vehicle
+#^^^^^^^^^^^^^^^ source.vehicle
 #               ^ source.vehicle keyword.operator.define.vehicle
 #                ^ source.vehicle
 #                 ^ source.vehicle constant.numeric.integral.decimal.vehicle
 >previousSensor = 1
-#^^^^^^^^^^^^ source.vehicle
-#            ^^ source.vehicle keyword.operator.or.vehicle
-#              ^ source.vehicle
+#^^^^^^^^^^^^^^^ source.vehicle
 #               ^ source.vehicle keyword.operator.define.vehicle
 #                ^ source.vehicle
 #                 ^ source.vehicle constant.numeric.integral.decimal.vehicle
@@ -43,20 +37,18 @@
 >
 >@network
 #^^^^^^^^ source.vehicle keyword.other.declaration.network.vehicle
->controller : InputVector -> Tensor Rat [1]
+>controller : InputVector -> Tensor Real [1]
 #^^^^^^^^^^^ source.vehicle
 #           ^ source.vehicle keyword.operator.colon.vehicle
-#            ^^^^^^^^^^ source.vehicle
-#                      ^^ source.vehicle keyword.operator.or.vehicle
-#                        ^ source.vehicle
+#            ^^^^^^^^^^^^^ source.vehicle
 #                         ^^ source.vehicle keyword.operator.arrow.vehicle
 #                           ^ source.vehicle
 #                            ^^^^^^ source.vehicle support.type.tensor.vehicle
 #                                  ^ source.vehicle
-#                                   ^^^ source.vehicle support.type.rat.vehicle
-#                                      ^^ source.vehicle
-#                                        ^ source.vehicle constant.numeric.integral.decimal.vehicle
-#                                         ^^ source.vehicle
+#                                   ^^^^ source.vehicle support.type.rat.vehicle
+#                                       ^^ source.vehicle
+#                                         ^ source.vehicle constant.numeric.integral.decimal.vehicle
+#                                          ^^ source.vehicle
 >
 >--------------------------------------------------------------------------------
 #^^ source.vehicle comment.line.double-dash.vehicle punctuation.definition.comment.vehicle
@@ -68,9 +60,7 @@
 >safeInput : InputVector -> Bool
 #^^^^^^^^^^ source.vehicle
 #          ^ source.vehicle keyword.operator.colon.vehicle
-#           ^^^^^^^^^^ source.vehicle
-#                     ^^ source.vehicle keyword.operator.or.vehicle
-#                       ^ source.vehicle
+#           ^^^^^^^^^^^^^ source.vehicle
 #                        ^^ source.vehicle keyword.operator.arrow.vehicle
 #                          ^ source.vehicle
 #                           ^^^^ source.vehicle support.type.bool.vehicle
@@ -96,9 +86,7 @@
 >safeOutput : InputVector -> Bool
 #^^^^^^^^^^^ source.vehicle
 #           ^ source.vehicle keyword.operator.colon.vehicle
-#            ^^^^^^^^^^ source.vehicle
-#                      ^^ source.vehicle keyword.operator.or.vehicle
-#                        ^ source.vehicle
+#            ^^^^^^^^^^^^^ source.vehicle
 #                         ^^ source.vehicle keyword.operator.arrow.vehicle
 #                           ^ source.vehicle
 #                            ^^^^ source.vehicle support.type.bool.vehicle

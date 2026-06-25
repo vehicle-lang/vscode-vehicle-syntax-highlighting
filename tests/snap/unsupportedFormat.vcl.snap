@@ -3,11 +3,11 @@
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.vehicle comment.line.double-dash.vehicle
 >@dataset
 #^^^^^^^^ source.vehicle keyword.other.declaration.dataset.vehicle
->trainingDataset : List Rat
+>trainingDataset : List Real
 #^^^^^^^^^^^^^^^^ source.vehicle
 #                ^ source.vehicle keyword.operator.colon.vehicle
 #                 ^ source.vehicle
 #                  ^^^^ source.vehicle support.type.list.vehicle
 #                      ^ source.vehicle
-#                       ^^^ source.vehicle support.type.rat.vehicle
+#                       ^^^^ source.vehicle support.type.rat.vehicle
 >

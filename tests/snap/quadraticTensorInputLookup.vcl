@@ -1,5 +1,5 @@
 @network
-f : Vector Rat 1 -> Vector Rat 1
+f : Vector Real 1 -> Vector Real 1
 
 @property
 p : Bool
